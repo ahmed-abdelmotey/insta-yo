@@ -1,4 +1,14 @@
 /*------------------------------------*\
+  #Layout
+\*------------------------------------*/
+
+$l-desktop-max-width: 1000px;
+
+
+
+
+
+/*------------------------------------*\
   #MediaQueries
 \*------------------------------------*/
 
@@ -35,13 +45,19 @@ $primary-color: red;
 
 $typo-color-primary: black;
 $typo-color-secondary: #666;
+$typo-color-inverted: white;
+
+$border-color: #ccc;
+$box-shadow-color: #eee;
+
+$input-focus-color: #1c62b9;
 
 
 
 
 
 /*------------------------------------*\
-  #Layout
+  #Border
 \*------------------------------------*/
-
-$l-desktop-max-width: 1000px;
+$border-width: 1px;
+$border-radius: 4px;

@@ -11,5 +11,6 @@
 @media screen and (min-width: $scr-md){
     .l-constrained { 
         max-width: $l-desktop-max-width;
+        margin: auto;
     }
 }

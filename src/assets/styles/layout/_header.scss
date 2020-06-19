@@ -12,6 +12,8 @@ $desktop-bg-color: white;
     height: 5rem;
     padding: 1rem;
 
+    position: relative;
+
     @media screen and (min-width: $scr-md){
         background-color: $desktop-bg-color;
         width: 100%;

@@ -1,0 +1,22 @@
+.c-header { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .c-header__logo {
+        
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 30px;
+
+        &--sml { width: 40px;  }
+        &--lrg { width: 100px; display: none; }
+        
+        @media screen and (min-width: $scr-md){
+            &--sml { display: none; }
+            &--lrg { display: block; }
+        
+        }  
+    }
