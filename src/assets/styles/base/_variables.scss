@@ -1,19 +1,47 @@
+/*------------------------------------*\
+  #MediaQueries
+\*------------------------------------*/
 
-/* #Background colors */
+/*
+ * min width of majority of contemporary phones,
+ * consider changing to 320px for supporting older phones 
+ */
+$scr-sm: 360px;
+
+/*
+ * support Ipad in portrait mode (tablet mode),
+ * consider changing to 600px for supporting older tablets
+ * !important: current design doesn't support tablet mode
+ */
+$scr-md: 768px;
+
+/*
+ * desktop screans, 
+ * support Ipad in landscape mode (desktop mode)
+ */
+$scr-lg: 1024px; // 
+
+
+
+
+
+/*------------------------------------*\
+  #Colors
+\*------------------------------------*/
 
 $bg-color: #F9f9f9;
 
-
-
-
-/* #Colors */
-
 $primary-color: red;
-
-
-
-
-/* #Typography */
 
 $typo-color-primary: black;
 $typo-color-secondary: #666;
+
+
+
+
+
+/*------------------------------------*\
+  #Layout
+\*------------------------------------*/
+
+$l-desktop-max-width: 1000px;

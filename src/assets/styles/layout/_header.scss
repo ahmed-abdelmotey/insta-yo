@@ -1,0 +1,21 @@
+/*
+ * layout styles are concerned about laying out the main items of the app e.g. header, body, sidebar, etc...
+ * prefix layout classes with 'l' to distinguish between layout and component styles
+ */
+
+$mobile-bg-color: $primary-color; 
+$desktop-bg-color: white;
+
+.l-header { 
+    background: $mobile-bg-color;
+
+    height: 5rem;
+    padding: 1rem;
+
+    @media screen and (min-width: $scr-md){
+        background-color: $desktop-bg-color;
+        width: 100%;
+        position: fixed;
+        top: 0;
+    }
+}
