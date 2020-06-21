@@ -3,7 +3,9 @@
     <div class="l-header">
       <Header />
     </div>
-    <router-view />
+    <div class="l-content">
+      <router-view />
+    </div>
   </div>
 </template>
 
