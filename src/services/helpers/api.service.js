@@ -20,14 +20,24 @@ const create = (baseURL = 'https://www.googleapis.com/youtube/v3') => {
     };
   });
 
-  const getTrendingVideos = () => api.get('/videos', {
+  const getTrendingVideos = (pageToken) => api.get('/videos', {
     part: 'snippet,contentDetails,statistics',
     chart: 'mostPopular',
-    regionCode: 'US',
+    maxResults: 10,
+    pageToken,
+  });
+
+  const getSearchResults = (q, pageToken) => api.get('/search', {
+    part: 'snippet',
+    chart: 'mostPopular',
+    maxResults: 10,
+    q,
+    pageToken,
   });
 
   return {
     getTrendingVideos,
+    getSearchResults,
   };
 };
 

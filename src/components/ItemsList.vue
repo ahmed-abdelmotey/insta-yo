@@ -18,8 +18,5 @@ export default {
       type: Array,
     },
   },
-  mounted() {
-    console.log(this.items);
-  },
 };
 </script>

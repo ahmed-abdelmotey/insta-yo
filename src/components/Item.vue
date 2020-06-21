@@ -23,6 +23,8 @@
 </template>
 
 <script>
+import { ITEMS_TYPES } from '@/services/mapper.service';
+
 export default {
   name: 'Item',
   props: {
@@ -33,7 +35,17 @@ export default {
   },
   methods: {
     openDetails() {
-      this.$router.push({ name: 'Details', params: { videoId: this.item.id } });
+      if (this.item.kind === ITEMS_TYPES.VIDEO) {
+        this.$router.push({ name: 'Details', params: { videoId: this.item.id } });
+      }
+
+      if (this.item.kind === ITEMS_TYPES.PLAYLIST) {
+        this.$router.push({ name: 'Details', params: { videoId: this.item.id }, query: { isPlaylist: true } });
+      }
+
+      if (this.item.kind === ITEMS_TYPES.CHANNEL) {
+        this.$router.push({ name: 'Channel', params: { channelId: this.item.id } });
+      }
     },
   },
 };

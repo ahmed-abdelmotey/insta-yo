@@ -35,28 +35,98 @@ export const parseVideoDuration = (durationString) => {
 };
 
 /**
+ * Dictionary of different entities types returned from the API
+ */
+export const ITEMS_TYPES = {
+  VIDEO: 'youtube#video',
+  CHANNEL: 'youtube#channel',
+  PLAYLIST: 'youtube#playlist',
+};
+
+/**
  * maps the raw object to object used inside the app
  * @param {Object} item as recieved from youtube APIs
  * todo: add classes for the objects needed or interfaces in case of typescript
  * todo: split this into multiple files when the file grows.
  */
-const mapItemToVideo = (item) => ({
-  id: item.id,
-  title: item.snippet.title,
+const mapItemToVideo = ({
+  id, kind, snippet, statistics, contentDetails,
+}) => ({
+  id,
+  kind,
+  title: snippet.title,
   thumbnail: {
-    small: item.snippet.thumbnails.default.url,
-    medium: item.snippet.thumbnails.medium.url,
+    small: snippet.thumbnails.default.url,
+    medium: snippet.thumbnails.medium.url,
   },
-  channelName: item.snippet.channelTitle,
-  views: item.statistics.viewCount,
-  duration: parseVideoDuration(item.contentDetails.duration), // FIXME: Needs to be parsed
-  publishDate: item.snippet.publishedAt,
-  publishDateRelative: moment(item.snippet.publishedAt).fromNow(),
-  description: truncateTextWithMaxLength(item.snippet.description, 400),
+  channelName: snippet.channelTitle,
+  publishDate: snippet.publishedAt,
+  publishDateRelative: moment(snippet.publishedAt).fromNow(),
+  description: truncateTextWithMaxLength(snippet.description, 400),
+  views: statistics && statistics.viewCount,
+  duration: contentDetails && parseVideoDuration(contentDetails.duration),
 });
+
+/**
+ * channel item
+ * @param {Object} item
+ */
+const mapItemToChannel = ({ id, kind, snippet }) => ({
+  id,
+  kind,
+  title: snippet.title,
+  thumbnail: {
+    small: snippet.thumbnails.default.url,
+    medium: snippet.thumbnails.medium.url,
+  },
+  channelName: snippet.channelTitle,
+  publishDate: snippet.publishedAt,
+  publishDateRelative: moment(snippet.publishedAt).fromNow(),
+  description: truncateTextWithMaxLength(snippet.description, 400),
+});
+
+/**
+ * playlist item
+ * @param {Object} item
+ */
+const mapItemToPlaylist = ({ id, kind, snippet }) => ({
+  id,
+  kind,
+  title: snippet.title,
+  thumbnail: {
+    small: snippet.thumbnails.default.url,
+    medium: snippet.thumbnails.medium.url,
+  },
+  channelName: snippet.channelTitle,
+  publishDate: snippet.publishedAt,
+  publishDateRelative: moment(snippet.publishedAt).fromNow(),
+  description: truncateTextWithMaxLength(snippet.description, 400),
+});
+
+/**
+ * search items could be videos or channels or playlists
+ * maps different items to the same interface used across application
+ * @param {Object} item
+ */
+const mapSearchItem = (item) => {
+  if (item.id.kind === ITEMS_TYPES.VIDEO) {
+    return mapItemToVideo({ ...item, id: item.id.videoId, kind: item.id.kind });
+  }
+
+  if (item.id.kind === ITEMS_TYPES.CHANNEL) {
+    return mapItemToChannel({ ...item, id: item.id.channelId, kind: item.id.kind });
+  }
+
+  if (item.id.kind === ITEMS_TYPES.PLAYLIST) {
+    return mapItemToPlaylist({ ...item, id: item.id.playlistId, kind: item.id.kind });
+  }
+
+  return null;
+};
 
 const mapperService = {
   mapItemToVideo,
+  mapSearchItem,
 };
 
 export default mapperService;
