@@ -1,0 +1,341 @@
+{
+    "kind": "youtube#searchListResponse",
+    "etag": "iN6fI9Pn2AbSg7-9vhOmsW-jOaE",
+    "nextPageToken": "CAoQAA",
+    "regionCode": "EG",
+    "pageInfo": {
+        "totalResults": 1000000,
+        "resultsPerPage": 10
+    },
+    "items": [{
+        "kind": "youtube#searchResult",
+        "etag": "bImLxm7I5JjeZLS5-RHs2JHPzvo",
+        "id": {
+            "kind": "youtube#video",
+            "videoId": "3WdIXGzV6a0"
+        },
+        "snippet": {
+            "publishedAt": "2017-07-17T15:00:00Z",
+            "channelId": "UC9Ks_EloWi4bkkmw-c8wCIw",
+            "title": "أغنية تركية حزينة للأسطورة سيزين اكسو - أذهب مترجمة للعربية Sezen Aksu - Git",
+            "description": "\" Sezen Aksu - Git \" الترجمة ○○ مصطفى سويدري جميع حقوق الترجمة محفوظة لدى قناة ○ مصطفى سويدري ○ للتواصل معي...",
+            "thumbnails": {
+                "default": {
+                    "url": "https://i.ytimg.com/vi/3WdIXGzV6a0/default.jpg",
+                    "width": 120,
+                    "height": 90
+                },
+                "medium": {
+                    "url": "https://i.ytimg.com/vi/3WdIXGzV6a0/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                },
+                "high": {
+                    "url": "https://i.ytimg.com/vi/3WdIXGzV6a0/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                }
+            },
+            "channelTitle": "Mustafa Soydere",
+            "liveBroadcastContent": "none",
+            "publishTime": "2017-07-17T15:00:00Z"
+        }
+    }, {
+        "kind": "youtube#searchResult",
+        "etag": "ap5mWcBMWrFOespInsOtCcovgxY",
+        "id": {
+            "kind": "youtube#video",
+            "videoId": "LGv5NMhtoAU"
+        },
+        "snippet": {
+            "publishedAt": "2016-01-17T05:14:36Z",
+            "channelId": "UCZUDGqrsnV61XRbVInAmCRg",
+            "title": "Sezen Aksu - Git - أغنية تركية مترجمة - سمر ومهند",
+            "description": "اشتركو بقناتي الأخري لباقي الفيديوهات من هنا : www.youtube.com/channel/UCmPeyZA9fWGnCmWIVpkgAWw تابعوني ع الانستغرام www.instagram.com/eng...",
+            "thumbnails": {
+                "default": {
+                    "url": "https://i.ytimg.com/vi/LGv5NMhtoAU/default.jpg",
+                    "width": 120,
+                    "height": 90
+                },
+                "medium": {
+                    "url": "https://i.ytimg.com/vi/LGv5NMhtoAU/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                },
+                "high": {
+                    "url": "https://i.ytimg.com/vi/LGv5NMhtoAU/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                }
+            },
+            "channelTitle": "Engsoso14",
+            "liveBroadcastContent": "none",
+            "publishTime": "2016-01-17T05:14:36Z"
+        }
+    }, {
+        "kind": "youtube#searchResult",
+        "etag": "PrtOwbAOF2zQw0oJZvs5WftpcX0",
+        "id": {
+            "kind": "youtube#playlist",
+            "playlistId": "PLDoPjvoNmBAw4eOj58MZPakHjaO3frVMF"
+        },
+        "snippet": {
+            "publishedAt": "2019-06-11T01:18:42Z",
+            "channelId": "UCSNkfKl4cU-55Nm-ovsvOHQ",
+            "title": "Learn Git and Github",
+            "description": "Learn Git and Github With Practical Examples.",
+            "thumbnails": {
+                "default": {
+                    "url": "https://i.ytimg.com/vi/ACOiGZoqC8w/default.jpg",
+                    "width": 120,
+                    "height": 90
+                },
+                "medium": {
+                    "url": "https://i.ytimg.com/vi/ACOiGZoqC8w/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                },
+                "high": {
+                    "url": "https://i.ytimg.com/vi/ACOiGZoqC8w/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                }
+            },
+            "channelTitle": "Elzero Web School",
+            "liveBroadcastContent": "none",
+            "publishTime": "2019-06-11T01:18:42Z"
+        }
+    }, {
+        "kind": "youtube#searchResult",
+        "etag": "dtsjVxMCcy5X0a1Z_wMnmfcoMWA",
+        "id": {
+            "kind": "youtube#video",
+            "videoId": "rzhvo0PF74k"
+        },
+        "snippet": {
+            "publishedAt": "2012-05-29T09:53:49Z",
+            "channelId": "UC6OI7Crv96jgra5pwJNDFRQ",
+            "title": "Sezen Aksu - Git (Official Video)",
+            "description": "\"Git\" (Git - 1986) Söz: Sezen Aksu Beste: Onno Tunç Madem ki istiyorsun öyleyse durma git Beni düşünme rahat ol yalnız kalabilirim Sen de bilirsin hiçbir acı ...",
+            "thumbnails": {
+                "default": {
+                    "url": "https://i.ytimg.com/vi/rzhvo0PF74k/default.jpg",
+                    "width": 120,
+                    "height": 90
+                },
+                "medium": {
+                    "url": "https://i.ytimg.com/vi/rzhvo0PF74k/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                },
+                "high": {
+                    "url": "https://i.ytimg.com/vi/rzhvo0PF74k/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                }
+            },
+            "channelTitle": "Sezen Aksu",
+            "liveBroadcastContent": "none",
+            "publishTime": "2012-05-29T09:53:49Z"
+        }
+    }, {
+        "kind": "youtube#searchResult",
+        "etag": "SHRdhDegwfNnLoBpSOoQmpOLpGY",
+        "id": {
+            "kind": "youtube#video",
+            "videoId": "SWYqp7iY_Tc"
+        },
+        "snippet": {
+            "publishedAt": "2017-02-05T20:03:20Z",
+            "channelId": "UC29ju8bIPH5as8OGnQzwJyA",
+            "title": "Git &amp; GitHub Crash Course For Beginners",
+            "description": "In this Git tutorial we will talk about what exactly Git is and we will look at and work with all of the basic and most important commands such as add, commit, ...",
+            "thumbnails": {
+                "default": {
+                    "url": "https://i.ytimg.com/vi/SWYqp7iY_Tc/default.jpg",
+                    "width": 120,
+                    "height": 90
+                },
+                "medium": {
+                    "url": "https://i.ytimg.com/vi/SWYqp7iY_Tc/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                },
+                "high": {
+                    "url": "https://i.ytimg.com/vi/SWYqp7iY_Tc/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                }
+            },
+            "channelTitle": "Traversy Media",
+            "liveBroadcastContent": "none",
+            "publishTime": "2017-02-05T20:03:20Z"
+        }
+    }, {
+        "kind": "youtube#searchResult",
+        "etag": "TxVQOleQyv26RxVGfvoAhcZYN1I",
+        "id": {
+            "kind": "youtube#video",
+            "videoId": "NkYeVDFN8cE"
+        },
+        "snippet": {
+            "publishedAt": "2017-02-20T17:28:58Z",
+            "channelId": "UCr6uWAdWcc3gv_a405axZag",
+            "title": "Tuğkan - Git",
+            "description": "instagram : https://goo.gl/8j55oD twitter : https://goo.gl/UbCExm Hiç bitmez sanmıştım, Kusursuzsun diye inanmıştım, Artık ne sana ne de bir başkasına, ...",
+            "thumbnails": {
+                "default": {
+                    "url": "https://i.ytimg.com/vi/NkYeVDFN8cE/default.jpg",
+                    "width": 120,
+                    "height": 90
+                },
+                "medium": {
+                    "url": "https://i.ytimg.com/vi/NkYeVDFN8cE/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                },
+                "high": {
+                    "url": "https://i.ytimg.com/vi/NkYeVDFN8cE/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                }
+            },
+            "channelTitle": "Tuğkan",
+            "liveBroadcastContent": "none",
+            "publishTime": "2017-02-20T17:28:58Z"
+        }
+    }, {
+        "kind": "youtube#searchResult",
+        "etag": "eBo7ACfLdb53xyfdOdc0T05fA4Q",
+        "id": {
+            "kind": "youtube#video",
+            "videoId": "ZJhnSBCYpCw"
+        },
+        "snippet": {
+            "publishedAt": "2014-06-03T20:13:36Z",
+            "channelId": "UCKJKQWdWgFv2o1cvaqOP9HQ",
+            "title": "Ferhat Göçer - Git",
+            "description": "Ferhat Göçer Git http://tinyurl.com/k4puf9b Git Şarkı Sözleri: Aramızda görünmeyen duvarlar var Bilmediğim caddeler, bulvarlar Yabancısın hanidir, söylesem ...",
+            "thumbnails": {
+                "default": {
+                    "url": "https://i.ytimg.com/vi/ZJhnSBCYpCw/default.jpg",
+                    "width": 120,
+                    "height": 90
+                },
+                "medium": {
+                    "url": "https://i.ytimg.com/vi/ZJhnSBCYpCw/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                },
+                "high": {
+                    "url": "https://i.ytimg.com/vi/ZJhnSBCYpCw/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                }
+            },
+            "channelTitle": "Ferhat Göçer",
+            "liveBroadcastContent": "none",
+            "publishTime": "2014-06-03T20:13:36Z"
+        }
+    }, {
+        "kind": "youtube#searchResult",
+        "etag": "z2lrcdMw6OBvqIcc5WrWusL70vo",
+        "id": {
+            "kind": "youtube#video",
+            "videoId": "06TByJBx5IU"
+        },
+        "snippet": {
+            "publishedAt": "2017-02-04T15:56:11Z",
+            "channelId": "UCPxrBiHHdLS9qh1eyp1kesg",
+            "title": "Sezen Aksu - Git (Turkish-English-Greek lyrics)",
+            "description": "Τραγούδια του Kara Sevda!! Sezen Aksu - Git Kara Sevda 6 Bölüm Subscribe please!! For entertainment only!",
+            "thumbnails": {
+                "default": {
+                    "url": "https://i.ytimg.com/vi/06TByJBx5IU/default.jpg",
+                    "width": 120,
+                    "height": 90
+                },
+                "medium": {
+                    "url": "https://i.ytimg.com/vi/06TByJBx5IU/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                },
+                "high": {
+                    "url": "https://i.ytimg.com/vi/06TByJBx5IU/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                }
+            },
+            "channelTitle": "μαρίζα κλικ",
+            "liveBroadcastContent": "none",
+            "publishTime": "2017-02-04T15:56:11Z"
+        }
+    }, {
+        "kind": "youtube#searchResult",
+        "etag": "tQs2bc3zJt42SMjTgrNG7Wg7Zvo",
+        "id": {
+            "kind": "youtube#video",
+            "videoId": "USjZcfj8yxE"
+        },
+        "snippet": {
+            "publishedAt": "2019-09-19T16:24:38Z",
+            "channelId": "UCrqAGUPPMOdo0jfQ6grikZw",
+            "title": "Learn Git In 15 Minutes",
+            "description": "In this video, we'll go over all the important stuff you need to know to get started using Git. We cover git add, git commit, git branch, git checkout, and git merge!",
+            "thumbnails": {
+                "default": {
+                    "url": "https://i.ytimg.com/vi/USjZcfj8yxE/default.jpg",
+                    "width": 120,
+                    "height": 90
+                },
+                "medium": {
+                    "url": "https://i.ytimg.com/vi/USjZcfj8yxE/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                },
+                "high": {
+                    "url": "https://i.ytimg.com/vi/USjZcfj8yxE/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                }
+            },
+            "channelTitle": "Colt Steele",
+            "liveBroadcastContent": "none",
+            "publishTime": "2019-09-19T16:24:38Z"
+        }
+    }, {
+        "kind": "youtube#searchResult",
+        "etag": "wiq7LaVCrNVSJWcnKbBncnL_ImM",
+        "id": {
+            "kind": "youtube#video",
+            "videoId": "h0UTh4jpxjY"
+        },
+        "snippet": {
+            "publishedAt": "2017-03-05T10:03:21Z",
+            "channelId": "UC3mRvlsrA_K0cEmoTC3KseA",
+            "title": "Sezen Aksu - Git (Gitme Dur Ne Olur)",
+            "description": "Madem ki istiyorsun öyleyse durma git Beni düsünme rahat ol yalniz kalabilirim Sende bilirsin hiçbir aci sonsuza dek sürmez Hatta her an yeniden sevebilirim ...",
+            "thumbnails": {
+                "default": {
+                    "url": "https://i.ytimg.com/vi/h0UTh4jpxjY/default.jpg",
+                    "width": 120,
+                    "height": 90
+                },
+                "medium": {
+                    "url": "https://i.ytimg.com/vi/h0UTh4jpxjY/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                },
+                "high": {
+                    "url": "https://i.ytimg.com/vi/h0UTh4jpxjY/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                }
+            },
+            "channelTitle": "Aslıhan İŞİNDEN",
+            "liveBroadcastContent": "none",
+            "publishTime": "2017-03-05T10:03:21Z"
+        }
+    }]
+}
