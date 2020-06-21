@@ -13,6 +13,7 @@
 @import 'base/variables';
 @import 'base/reset';
 @import 'base/base';
+@import 'base/helpers';
 
 
 
@@ -24,6 +25,7 @@
 
 @import 'layout/grid';
 @import 'layout/header';
+@import 'layout/body-content';
 
 
 
@@ -34,3 +36,5 @@
 \*------------------------------------*/
 @import 'component/header.scss';
 @import 'component/search-input.scss';
+@import 'component/items-list.scss';
+@import 'component/item.scss';

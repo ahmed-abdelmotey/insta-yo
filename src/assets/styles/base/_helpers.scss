@@ -1,0 +1,10 @@
+/**
+ * set of helper classes to be used across the app
+ */
+
+
+.h-truncate-text { 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

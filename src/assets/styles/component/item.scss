@@ -1,0 +1,82 @@
+.c-item {
+    display: flex;
+    cursor: pointer;
+
+    &:not(:last-child) {  margin-bottom: 1rem; }
+}
+
+    .c-item__image {
+        position: relative;
+        flex-grow: 0;
+        align-self: flex-start;
+
+        &__info {
+            position: absolute;
+            bottom: 0.5rem;
+            right: 0.5rem; 
+            padding: 3px;
+            font-size: 1rem;
+            border-radius: 2px;
+
+            background: rgba(0,0,0, 0.7);
+            color: #eee;
+        }
+    }
+
+    .c-item__info {
+        position: relative;
+        padding-top: 1rem;
+        flex-grow: 2;
+        font-size: 1.4rem;
+        text-align: left;
+        margin-left: 1rem;
+
+        overflow: hidden;
+    }
+
+        .c-item__info__title {
+            max-height: 3.2rem;
+            overflow: hidden;
+
+            @media screen and (min-width: $scr-md) { max-height: unset; }
+        }
+
+        .c-item__info__stats {
+            color: #999;
+            
+            @media screen and (min-width: $scr-md) { margin-top: 1rem; }
+
+            span {
+                display: block;
+
+                /*
+                * display all stats inline and add a small dot between them
+                */
+                @media screen and (min-width: $scr-md) {
+                    display: inline-block; 
+
+                    &:not(:first-child):before{
+                        content: '.';
+                        display: inline-block;
+                        margin: 0.2rem;
+                        font-size: 3rem;
+                        line-height: 1px;
+                        bottom: 3px;
+                        position: relative;
+    
+                    }
+                }
+            }
+        }
+
+        .c-item__info__description {
+            display: none;
+            
+            @media screen and (min-width: $scr-md) { 
+                display: block;
+                margin-top: 1rem;
+                color: #666;
+
+            }
+
+        }

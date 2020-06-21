@@ -1,0 +1,10 @@
+{
+    "VIEWS": {
+
+    },
+    "COMPONENTS": {
+        "ITEM": {
+            "VIEWS": "views"
+        }
+    }
+}

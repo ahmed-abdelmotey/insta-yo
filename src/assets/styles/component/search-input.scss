@@ -41,6 +41,8 @@ $search-button-background: $bg-color;
         .search__input {
             width: 40rem;
 
+            margin-right: 0;
+
             border: $border-width solid $border-color;
             border-right: none;
             border-radius: $border-radius 0 0 $border-radius;
