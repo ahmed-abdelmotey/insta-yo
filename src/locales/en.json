@@ -5,6 +5,13 @@
     "COMPONENTS": {
         "ITEM": {
             "VIEWS": "views"
+        },
+        "FILTER_BAR": {
+            "COUNT": "About {count} Results",
+            "FILTER": "Filter"
+        },
+        "LOAD_MORE": {
+            "LABEL": "show more items"
         }
     }
 }

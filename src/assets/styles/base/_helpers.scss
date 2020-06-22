@@ -8,3 +8,14 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+.h-desktop-only { 
+    display: none;
+    @media screen and (min-width: $scr-md){
+        display: unset;
+    }
+}
+
+.h-mobile-only { 
+    @media screen and (min-width: $scr-md){ display: none; }
+}
