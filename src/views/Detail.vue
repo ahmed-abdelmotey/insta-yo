@@ -1,16 +1,20 @@
 <template>
   <div class="l-constrained" key="this.$route.params.videoId">
-    <Spinner v-if="!video" />
+    <div v-if="$route.query.isPlaylist">playlist details is not implemented</div>
+    <div v-if="!$route.query.isPlaylist">
 
-    <VideoEmbed v-if="video" :videoId="this.$route.params.videoId"/>
-    <VideoPanel v-if="video" :video="video" />
+      <Spinner v-if="!video" />
 
-    <Spinner v-if="video && relatedItems.length === 0" />
+      <VideoEmbed v-if="video" :videoId="this.$route.params.videoId"/>
+      <VideoPanel v-if="video" :video="video" />
 
-    <ItemsList v-if="relatedItems.length > 0" :items="relatedItems"/>
+      <Spinner v-if="video && relatedItems.length === 0" />
 
-    <LoadMore v-if="relatedItems.length > 0" @load="loadMore"/>
-    <Spinner v-if="loadingMore" />
+      <ItemsList v-if="relatedItems.length > 0" :items="relatedItems"/>
+
+      <LoadMore v-if="relatedItems.length > 0" @load="loadMore"/>
+      <Spinner v-if="loadingMore" />
+    </div>
 
   </div>
 </template>

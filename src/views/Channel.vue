@@ -43,10 +43,8 @@ export default {
 
     api.getChannelPlaylists(this.$route.params.channelId).then((channelPlaylistsRes) => {
       if (channelPlaylistsRes.ok) {
-        console.log(channelPlaylistsRes.data.items);
         this.playlistsLoading = false;
         this.playlists = channelPlaylistsRes.data.items.map(mapperService.mapItemToPlaylist);
-        console.log(this.playlists);
       }
     });
   },
