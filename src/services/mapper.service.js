@@ -91,7 +91,9 @@ const mapItemToChannel = ({ id, kind, snippet }) => ({
  * playlist item
  * @param {Object} item
  */
-const mapItemToPlaylist = ({ id, kind, snippet }) => ({
+const mapItemToPlaylist = ({
+  id, kind, snippet, contentDetails,
+}) => ({
   id,
   kind,
   title: snippet.title,
@@ -103,6 +105,7 @@ const mapItemToPlaylist = ({ id, kind, snippet }) => ({
   publishDate: snippet.publishedAt,
   publishDateRelative: moment(snippet.publishedAt).fromNow(),
   description: truncateTextWithMaxLength(snippet.description, 400),
+  itemsCount: contentDetails && contentDetails.itemCount,
 });
 
 /**
@@ -126,9 +129,28 @@ const mapSearchItem = (item) => {
   return null;
 };
 
+const mapChannelDetails = ({
+  id, kind, brandingSettings, snippet, statistics,
+}) => ({
+  id,
+  kind,
+  banner: {
+    mobile: brandingSettings.image.bannerMobileImageUrl,
+    other: brandingSettings.image.bannerImageUrl,
+  },
+  thumbnail: {
+    mobile: snippet.thumbnails.default.url,
+    other: snippet.thumbnails.medium.url,
+  },
+  subscribersCount: statistics.subscriberCount,
+  title: snippet.title,
+});
+
 const mapperService = {
   mapItemToVideo,
+  mapItemToPlaylist,
   mapSearchItem,
+  mapChannelDetails,
 };
 
 export default mapperService;

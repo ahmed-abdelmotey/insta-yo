@@ -5,7 +5,11 @@
         <source media="(min-width: 600px)" :srcset="item.thumbnail.medium">
         <img :src="item.thumbnail.small" alt="IfItDoesntMatchAnyMedia">
       </picture>
-      <span class="c-item__image__info"> {{ item.duration }} </span>
+      <span class="c-item__image__info" v-if="item.duration"> {{ item.duration }} </span>
+      <div class="c-item__image__count" v-if="item.itemsCount">
+        <span>{{ item.itemsCount }}</span>
+        <font-awesome-icon :icon="['fa', 'list']" size="2x" />
+      </div>
     </div>
 
     <div class="c-item__info" >

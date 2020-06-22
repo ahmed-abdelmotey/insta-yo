@@ -32,4 +32,35 @@ export default {
       };
     });
   },
+  getChannelDetails: () => {
+    const channelData = fetch('/mocks/channelDetails.json');
+    return channelData.then(async (response) => {
+      const responseData = await response.json();
+      return {
+        data: responseData,
+        ok: true,
+      };
+    });
+  },
+  getChannelSections: () => {
+    const channelSections = fetch('/mocks/channelSections.json');
+    return channelSections.then(async (response) => {
+      const responseData = await response.json();
+      return {
+        data: responseData,
+        ok: true,
+      };
+    });
+  },
+  getChannelPlaylists: () => {
+    const channelPlaylists = fetch('/mocks/channelPlaylists.json');
+    return channelPlaylists.then(async (response) => {
+      const responseData = await response.json();
+      return {
+        data: responseData,
+        ok: true,
+      };
+    });
+  },
+
 };

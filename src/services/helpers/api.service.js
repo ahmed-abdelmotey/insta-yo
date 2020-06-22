@@ -42,10 +42,32 @@ const create = (baseURL = 'https://www.googleapis.com/youtube/v3') => {
     id,
   });
 
+  const getChannelDetails = (id, pageToken) => api.get('/channels', {
+    part: 'snippet,contentDetails,statistics,brandingSettings',
+    pageToken,
+    id,
+  });
+
+  const getChannelSections = (id, pageToken) => api.get('/channelSections', {
+    part: 'snippet,contentDetails',
+    pageToken,
+    id,
+  });
+
+  const getChannelPlaylists = (channelId, pageToken) => api.get('/playlists', {
+    part: 'snippet,contentDetails',
+    pageToken,
+    channelId,
+    maxResults: 10,
+  });
+
   return {
     getTrendingVideos,
     getSearchResults,
     getVideoDetails,
+    getChannelDetails,
+    getChannelSections,
+    getChannelPlaylists,
   };
 };
 
