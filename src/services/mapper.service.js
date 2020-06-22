@@ -29,9 +29,7 @@ export const truncateTextWithMaxLength = (text, maxLength) => {
 export const parseVideoDuration = (durationString) => {
   const regex = new RegExp(/PT(?:(\d*)H)?(?:(\d*)M)?(?:(\d*)S)?/g);
   const [, ...match] = regex.exec(durationString);
-  // console.log(match);
   return match.filter((t) => t !== undefined).join(':');
-  // return `${match[1]}:${match[2]}`;
 };
 
 /**

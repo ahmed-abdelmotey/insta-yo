@@ -27,14 +27,24 @@ const create = (baseURL = 'https://www.googleapis.com/youtube/v3') => {
     pageToken,
   });
 
-  const getSearchResults = (q = '', params = {}, pageToken) => api.get('/search', {
-    part: 'snippet',
-    chart: 'mostPopular',
-    maxResults: 10,
-    q,
-    pageToken,
-    ...params,
-  });
+  const getSearchResults = (q = '', params = {}, pageToken) => {
+    const payload = {
+      part: 'snippet',
+      maxResults: 10,
+      pageToken,
+      ...params,
+    };
+
+    if (q && q.length > 0) {
+      payload.q = q;
+    }
+
+    if (params && params.relatedToVideoId) {
+      payload.type = 'video';
+    }
+
+    return api.get('/search', payload);
+  };
 
   const getVideoDetails = (id, pageToken) => api.get('/videos', {
     part: 'snippet,contentDetails,statistics',

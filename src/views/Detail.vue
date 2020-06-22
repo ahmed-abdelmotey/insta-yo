@@ -55,7 +55,7 @@ export default {
         api.getSearchResults('', { relatedToVideoId: this.$route.params.videoId }).then((relatedVideoRes) => {
           if (relatedVideoRes.ok) {
             this.relatedItems = relatedVideoRes.data.items.map(mapperService.mapSearchItem);
-            this.nextPageToken = relatedVideoRes.nextPageToken;
+            this.nextPageToken = relatedVideoRes.data.nextPageToken;
           }
         });
       }
@@ -64,9 +64,12 @@ export default {
   methods: {
     loadMore() {
       this.loadingMore = true;
-      api.getSearchResults('', { relatedToVideoId: this.$route.params.videoId }, this.nextPageToken).then((extraVideosRes) => {
+      api.getSearchResults(
+        null,
+        { relatedToVideoId: this.$route.params.videoId },
+        this.nextPageToken,
+      ).then((extraVideosRes) => {
         if (extraVideosRes.ok) {
-          console.log(extraVideosRes.data);
           this.relatedItems = [
             ...this.relatedItems,
             ...extraVideosRes.data.items.map(mapperService.mapSearchItem),
