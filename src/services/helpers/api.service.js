@@ -27,12 +27,13 @@ const create = (baseURL = 'https://www.googleapis.com/youtube/v3') => {
     pageToken,
   });
 
-  const getSearchResults = (q, pageToken) => api.get('/search', {
+  const getSearchResults = (q, params = {}, pageToken) => api.get('/search', {
     part: 'snippet',
     chart: 'mostPopular',
     maxResults: 10,
     q,
     pageToken,
+    ...params,
   });
 
   return {

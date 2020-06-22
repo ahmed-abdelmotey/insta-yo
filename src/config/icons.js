@@ -4,11 +4,15 @@
  * to keep package size as small as possible
  */
 
-import { faSearch, faSpinner } from '@fortawesome/free-solid-svg-icons';
+import {
+  faSearch, faSpinner, faFilter, faTimes,
+} from '@fortawesome/free-solid-svg-icons';
 
 const usedIcons = [
   faSearch,
   faSpinner,
+  faFilter,
+  faTimes,
 ];
 
 export default usedIcons;
