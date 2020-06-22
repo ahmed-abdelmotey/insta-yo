@@ -5,7 +5,6 @@
     <div class="c-header__logo  c-header__logo--lrg"
         :style="{ backgroundImage: `url('${logoLrg}')` }" />
     <SearchInput />
-    <!-- search input  -->
   </div>
 </template>
 
