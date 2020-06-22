@@ -63,7 +63,9 @@ const mapItemToVideo = ({
   publishDate: snippet.publishedAt,
   publishDateRelative: moment(snippet.publishedAt).fromNow(),
   description: truncateTextWithMaxLength(snippet.description, 400),
-  views: statistics && statistics.viewCount,
+  views: statistics && Number(statistics.viewCount),
+  likes: statistics && Number(statistics.likeCount),
+  dislikes: statistics && Number(statistics.dislikeCount),
   duration: contentDetails && parseVideoDuration(contentDetails.duration),
 });
 

@@ -13,8 +13,18 @@ export default {
     });
   },
   getSearchResults: () => {
-    const trendingVideos = fetch('/mocks/searchResults.json');
-    return trendingVideos.then(async (response) => {
+    const searchResults = fetch('/mocks/searchResults2.json');
+    return searchResults.then(async (response) => {
+      const responseData = await response.json();
+      return {
+        data: responseData,
+        ok: true,
+      };
+    });
+  },
+  getVideoDetails: () => {
+    const videoData = fetch('/mocks/videoDetails.json');
+    return videoData.then(async (response) => {
       const responseData = await response.json();
       return {
         data: responseData,

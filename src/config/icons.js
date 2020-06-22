@@ -6,6 +6,7 @@
 
 import {
   faSearch, faSpinner, faFilter, faTimes,
+  faFlag, faThumbsUp, faThumbsDown, faShare, faPlus, faEllipsisH,
 } from '@fortawesome/free-solid-svg-icons';
 
 const usedIcons = [
@@ -13,6 +14,13 @@ const usedIcons = [
   faSpinner,
   faFilter,
   faTimes,
+
+  faFlag,
+  faThumbsUp,
+  faThumbsDown,
+  faShare,
+  faPlus,
+  faEllipsisH,
 ];
 
 export default usedIcons;

@@ -27,7 +27,7 @@ const create = (baseURL = 'https://www.googleapis.com/youtube/v3') => {
     pageToken,
   });
 
-  const getSearchResults = (q, params = {}, pageToken) => api.get('/search', {
+  const getSearchResults = (q = '', params = {}, pageToken) => api.get('/search', {
     part: 'snippet',
     chart: 'mostPopular',
     maxResults: 10,
@@ -36,9 +36,16 @@ const create = (baseURL = 'https://www.googleapis.com/youtube/v3') => {
     ...params,
   });
 
+  const getVideoDetails = (id, pageToken) => api.get('/videos', {
+    part: 'snippet,contentDetails,statistics',
+    pageToken,
+    id,
+  });
+
   return {
     getTrendingVideos,
     getSearchResults,
+    getVideoDetails,
   };
 };
 
